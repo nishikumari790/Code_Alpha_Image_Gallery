@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="image.css">
+    <title>Image Gallery</title>
+</head>
+<body>
+    <div class="gallery">
+        <div class="thumbnail" onclick="openModal(); currentSlide(1)">
+            <img src="image1.jpg" alt="Image 1">
+        </div>
+        <div class="thumbnail" onclick="openModal(); currentSlide(2)">
+            <img src="image2.jpg" alt="Image 2">
+        </div>
+        <div class="thumbnail" onclick="openModal(); currentSlide(3)">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+        <div class="thumbnail" onclick="openModal(); currentSlide(4)">
+            <img src="image4.jpg" alt="Image 4">
+        </div>
+        <div class="thumbnail" onclick="openModal(); currentSlide(5)">
+            <img src="image5.jpg" alt="Image 5">
+        </div>
+        <div class="thumbnail" onclick="openModal(); currentSlide(6)">
+            <img src="image6.jpg" alt="Image 6">
+        </div>
+        <!-- Add more thumbnails as needed -->
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="mySlides">
+                <img src="image1.jpg" alt="Image 1">
+            </div>
+            <div class="mySlides">
+                <img src="image2.jpg" alt="Image 2">
+            </div>
+            <div class="mySlides">
+                <img src="image3.jpg" alt="Image 3">
+            </div>
+            <div class="mySlides">
+                <img src="image4.jpg " alt="Image 4">
+            </div>
+            <div class="mySlides">
+                <img src="image5.jpg" alt="Image 5">
+            </div>
+            <div class="mySlides">
+                <img src="image6.jpg" alt="Image 6">
+            </div>
+            <!-- Add more slides as needed -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <script src="image.js"></script>
+</body>
+</html>
